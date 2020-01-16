@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:padding="20dp"
+    tools:context=".inputhapalan">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="LEMBAR MUTABAAH"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:hint="tanggal"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:inputType="datetime" />
+
+        <EditText
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/sesi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nama"
+            android:hint="sesi"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="#fff"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/juz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nama"
+            android:hint="juz"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:inputType="datetime" />
+
+        <EditText
+            android:id="@+id/surah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date"
+            android:hint="surah"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/ayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ayat"
+            android:padding="12dp"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/nilai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nama"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:hint="nilai"
+            android:inputType="datetime" />
+
+    <EditText
+        android:id="@+id/semester"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:hint="semester"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/thn_ajaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:ems="10"
+        android:hint="tahun ajaran"
+        android:layout_margin="5dp"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnSimpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#f05924"
+        android:padding="10dp"
+        android:text="Simpan"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="136dp"
+            android:layout_height="99dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="Ustadzah"
+            android:textColor="#ffff"
+            android:textSize="20dp"
+            android:inputType="textPersonName" />
+
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="#BC8F8F"
+            android:text="Logout"
+            android:textColor="#000" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:padding="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+
+            <ImageButton
+                android:id="@+id/menu_absensi"
+                android:layout_width="134dp"
+                android:layout_height="129dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/absen" />
+            <Button
+                android:id="@+id/btnabsen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_absensi"
+                android:layout_marginLeft="30dp"
+                android:text="absen"
+                android:background="@drawable/edittext"/>
+
+            <ImageButton
+                android:id="@+id/menumutabaah"
+                android:layout_width="134dp"
+                android:layout_height="129dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/quran" />
+            <Button
+                android:id="@+id/btnziyadah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menumutabaah"
+                android:layout_marginLeft="235dp"
+                android:text="jiyadah"
+                android:background="@drawable/edittext"/>
+
+            <TextView
+                android:id="@+id/absen"
+                android:layout_width="134dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="10dp"
+                android:text="Absensi"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/mutabaah"
+                android:layout_width="134dp"
+                android:layout_height="39dp"
+                android:layout_marginLeft="210dp"
+                android:text="Mutabaah"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+    </RelativeLayout>
+</RelativeLayout>
